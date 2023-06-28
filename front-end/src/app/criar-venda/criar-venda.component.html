@@ -1,0 +1,24 @@
+
+<div class="container col-md-6">
+
+  <h1 style="color: red;">Cadastro de Vendas</h1>
+
+  <form class="container" (ngSubmit)="addVendaData()">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Valor</label>
+      <input type="text" class="form-control" id="valor" name="valor" [(ngModel)]="venda.valor">
+    </div>
+
+    <div class="mb-3">
+      <label for="vendedor" class="form-label">Vendedor</label>
+      <select class="form-control" id="vendedor" name="vendedor" [(ngModel)]="venda.vendedor">
+        <option *ngFor="let vendedor of vendedores" [value]="vendedor.id">{{vendedor.nome}}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Cadastrar Venda</button>
+
+  </form>
+
+</div>

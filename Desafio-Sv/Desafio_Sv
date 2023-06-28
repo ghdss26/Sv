@@ -1,0 +1,11 @@
+Premissas:
+Criar uma API usando Spring Boot.
+O banco de dados pode ser de sua escolha.
+Não é necessário desenvolver front-end, apenas o back-end.
+Teste:
+Desenvolver um serviço que seja capaz de gerar uma venda.
+
+Uma venda é composta por id, data da venda, valor, vendedor id e vendedor nome.
+Sua tarefa é desenvolver os serviços REST abaixo:
+Criar uma venda.
+Retornar ranking dos 10 melhores vendedores da semana com média de vendas diária.

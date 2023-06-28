@@ -1,0 +1,6 @@
+Comando para criar os componentes - ng g c criar-vendas
+
+Comando para criar os serviços - ng g s venda-service
+
+Comando para criar as classes - ng g class venda
+

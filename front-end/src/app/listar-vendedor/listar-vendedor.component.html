@@ -1,0 +1,26 @@
+
+<table class="table table table-dark table-striped">
+
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let vendedor of vendedores">
+
+      <th scope="row">{{vendedor.id}}</th>
+      <td>{{vendedor.nome}}</td>
+      <td>
+
+        <button (click)="atualizarVendedor(vendedor.id)" class="btn btn-info">Atualizar</button>
+        <button (click)="deletarVendedor(vendedor.id)" class="btn btn-danger">Deletar</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

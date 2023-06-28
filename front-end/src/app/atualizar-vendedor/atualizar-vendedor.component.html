@@ -1,0 +1,17 @@
+<div class="container col-md-6">
+
+  <h1 style="color: red;">Atualização de Vendedores</h1>
+
+  <form class="container" (ngSubmit)="atualizarVendedorData()">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="vendedor.nome">
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Atualizar Vendedor</button>
+
+  </form>
+
+</div>
+
